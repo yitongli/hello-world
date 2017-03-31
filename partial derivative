@@ -1,0 +1,20 @@
+partial derivative:
+                  f(x0)≈ f(x0) + f'(x0)(x-x0) Taylor approximation 
+                  If change x to x + delta x ,y + delta y ,z = f(x,y),then delta z ≈ ∂x*delta x + ∂y*delta y,the partial derivative means the slope of x and y, and the rate of the change of x,y. In the graph, it in terms of tangent plain approximation.
+
+∂f/∂x(x,y)=a,z = z + a(x-x0)
+∂f/∂y(x,y)=b,z = z + b(y-y0)
+that is a linear equations.
+z = z + a(x-x0) +b(y-y0),are both tangent to the graph.
+
+#一元微积分中，可用泰勒多项式逼近。偏导数代表了多元函数图像上切平面的斜率，变量变化的速率，最终可化为线性方程求解。
+
+if partial derivative are all come to zero,that means that maybe local min or local max,or saddle.In the graph,the dot,called critical point, will be in the tangent plane that is horizontal plane.
+
+application:
+           calculate min/max, the most frequently used method is least-squares interpolation.Often used to find appropriate equations.the best method is to minimize the errors, by completing squares.usually use linear equation like that y = ax + b
+           Σ [（yi - （axi + b)]^2 ,and make the partial of a and b = 0.
+           exponential fit(指数拟合）:
+                                    y = c*e^ax
+                                    lny = lnc + ax, transfer it into linear equation.
+           y = ax^2 +bx + c,D(a,b,c)= Σ [yi-(ax^2 +bx + c)]^2, turns to a 3*3 linear equation.
